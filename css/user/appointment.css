@@ -1,0 +1,50 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+table {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+form {
+    margin: 50px 0;
+    padding: 30px 10px;
+    background-color: azure;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+input,
+label,
+select,
+textarea {
+    width: 95%;
+    margin-top: 20px;
+}
+
+textarea {
+    height: 80px;
+}
+label {
+    text-align: start;
+}
+
+input[type="radio"] {
+    text-align: start;
+}
+
+input[type="submit"] {
+    text-align: center;
+    width: 30%;
+    margin-top: 20px;
+}
+
+label[for="gender"],
+label[for="choice"],
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}

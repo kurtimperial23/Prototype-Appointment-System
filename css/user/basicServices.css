@@ -1,0 +1,29 @@
+/* start of carousel */
+#carousel {
+    background-color: black;
+    width: 100wv;
+    overflow: hidden;
+}
+.carousel_item img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+}
+
+/* start of main content  */
+
+main .service_item {
+    padding-top: 20px;
+}
+
+main {
+    padding-bottom: 20px;
+}
+
+main h1 {
+    font-weight: bold;
+    color: var(--color-main);
+    margin-bottom: 20px;
+}

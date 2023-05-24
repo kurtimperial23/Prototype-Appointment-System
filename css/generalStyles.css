@@ -1,0 +1,261 @@
+@import url("https://fonts.cdnfonts.com/css/qanelas");
+
+:root {
+    --color-main: #5a0000;
+    --color-sub: #800000;
+    --color-body: #f4f3f4;
+    --font-heading1: #ffffff;
+    --font-heading2: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global styles */
+
+section {
+    margin-top: 60px;
+}
+
+p,
+h1,
+.button {
+    font-family: "Qanelas", sans-serif;
+}
+
+h1 {
+    font-size: 34px;
+}
+h2 {
+    font-size: 29px;
+    font-weight: 600;
+}
+p {
+    font-size: 17px;
+}
+
+.button {
+    background-color: var(--color-main);
+    text-decoration: none;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.button:hover {
+    background-color: var(--color-sub);
+    color: var(--font-heading1);
+    border: white 1px solid;
+}
+
+/* start of header  */
+
+header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-main);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+header img {
+    width: 60px;
+    height: 100%;
+}
+
+header .container {
+    height: 100%;
+}
+
+nav,
+nav > ul {
+    height: inherit;
+}
+
+nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li > a {
+    font-size: 14 px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    text-decoration: none;  
+    color: var(--font-heading1);
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown {
+    display: none;
+}
+
+.openSidebar img,
+.openSidebar i {
+    display: none;
+}
+
+.openSidebar i {
+    color: var(--font-heading1);
+}
+
+nav > ul > li > a:hover {
+    color: var(--font-heading1);
+    text-decoration: underline;
+    text-underline-offset: 22px;
+    text-decoration-thickness: 2px;
+}
+
+.current-page-link {
+    text-decoration: underline;
+    text-underline-offset: 22px;
+    text-decoration-thickness: 2px;
+}
+
+/* start of footer */
+footer {
+    background-color: var(--color-main);
+    padding: 40px 0 30px 0;
+}
+
+footer img {
+    width: 130px;
+    height: auto;
+}
+
+footer h4 {
+    padding-bottom: 20px;
+}
+
+footer h4,
+footer .link {
+    color: white;
+}
+footer .fa-brands {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.copyright {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+footer .footer-links {
+    padding-top: 10px;
+}
+
+footer .link {
+    text-decoration: none;
+}
+
+footer .link:hover {
+    color: #ffa8a8;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 16px;
+    }
+    /* start of footer */
+    footer {
+        padding: 30px 0 10px 0;
+        margin-top: 30px;
+    }
+    footer .footer-links:nth-of-type(1) {
+        padding-top: 10px;
+    }
+    footer .footer-links {
+        padding-top: 30px;
+    }
+
+    /* start of nav*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .openSidebar {
+        position: fixed;
+        display: block;
+        background-color: var(--color-main);
+        z-index: 11;
+        padding: 10px;
+        width: 100%;
+        top: 0;
+    }
+
+    .openSidebar img {
+        width: 40px;
+        display: inline;
+        padding: -10;
+    }
+
+    .openSidebar i {
+        font-size: 25px;
+        display: contents;
+    }
+
+    .logo {
+        padding: 10px 20px;
+    }
+    header .container {
+        display: block;
+    }
+    header {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    header a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    header a:hover {
+        color: #f1f1f1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 21px;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 16px;
+    }
+}
